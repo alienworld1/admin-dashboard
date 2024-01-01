@@ -113,6 +113,7 @@ header .profile-name {
     background: rgba(240, 240, 240, 0.35);
     border-radius: 10px;
     gap: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .user-card .user-profile {
