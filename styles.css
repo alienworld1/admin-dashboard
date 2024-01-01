@@ -155,6 +155,7 @@ button.user-action:hover {
 .main-content {
     display: grid;
     grid-template-columns: minmax(400px, 3fr) 1fr;
+    gap: 12px;
 }
 
 .projects {
