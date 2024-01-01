@@ -59,6 +59,18 @@ body {
     gap: var(--sidebar-link-gap);
 }
 
+.sidebar nav ul li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.sidebar nav ul li img {
+    height: 2rem;
+    filter: invert(98%) sepia(1%) saturate(1248%) hue-rotate(177deg) brightness(99%) contrast(98%);
+}
+
 .bold {
     font-weight: bold;
 }
