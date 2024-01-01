@@ -15,6 +15,8 @@
     --main-text-color: #020617;
     --secondary-text-color: #64748b;
     --button-background: #1d4ed8;
+    --subtle-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transparent-white: rgba(240, 240, 240, 0.35);
 }
 
 body {
@@ -110,10 +112,10 @@ header .profile-name {
 .user-card {
     display: flex;
     padding: 24px;
-    background: rgba(240, 240, 240, 0.35);
+    background: var(--transparent-white);
     border-radius: 10px;
     gap: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--subtle-box-shadow);
 }
 
 .user-card .user-profile {
@@ -154,3 +156,39 @@ button.user-action:hover {
     display: grid;
     grid-template-columns: minmax(400px, 3fr) 1fr;
 }
+
+.projects {
+    grid-area: 2 / 1 / 5 / 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 12px;
+}
+
+.card {
+    background: var(--sidebar-text-color);
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.project {
+    height: 200px;
+    box-shadow: var(--subtle-box-shadow);
+}
+
+.project  p.description {
+    margin-top: 12px;
+}
+
+.announcements {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 12px;
+    background-color: var(--transparent-white);
+    box-shadow: var(--subtle-box-shadow);
+    border-radius: 5px;
+}
+
