@@ -17,6 +17,7 @@
     --button-background: #1d4ed8;
     --subtle-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --transparent-white: rgba(240, 240, 240, 0.35);
+    --accent-color: #fbbf24;
 }
 
 body {
@@ -176,6 +177,10 @@ button.user-action:hover {
 .project {
     height: 200px;
     box-shadow: var(--subtle-box-shadow);
+    display: grid;
+    grid-template-columns: 1px auto auto;
+    grid-template-rows: 1.5rem 2fr minmax(36px, 1fr);
+    column-gap: 20px;
 }
 
 .project  p.description {
@@ -217,11 +222,29 @@ button.user-action:hover {
     display: flex;
     list-style: none;
     gap: 12px;
+    grid-column: -2 / -1;
+    grid-row: -2 / -1;
+    align-self: end;
+    justify-content: end;
 }
 
 .project-options img {
     width: 1.5rem;
 }
 
+.project h2 {
+    grid-column: 2 / -1;
+}
+
+.project .description {
+    grid-column: 2 / -1;
+}
+
+.accent {
+    background: var(--accent-color);
+    grid-row: 1 / -1;
+    border-radius: 5px 0 0 5px;
+    margin: -12px;
+}
 
 
