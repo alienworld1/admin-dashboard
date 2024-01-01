@@ -213,5 +213,15 @@ button.user-action:hover {
     gap: 8px;
 }
 
+.project .project-options {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.project-options img {
+    width: 1.5rem;
+}
+
 
 
