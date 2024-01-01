@@ -182,14 +182,33 @@ button.user-action:hover {
     margin-top: 12px;
 }
 
-.announcements {
+.announcements,
+.trending-cards {
     padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 12px;
     background-color: var(--transparent-white);
     box-shadow: var(--subtle-box-shadow);
     border-radius: 5px;
 }
+
+.announcements {
+    gap: 12px;
+}
+
+.trending {
+    display: grid;
+    grid-template: 1rem 1rem / 2rem auto;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
+}
+
+
+.trending .user-profile {
+    height: 2.5rem;
+    grid-row: 1 / -1;
+}
+
+
 
