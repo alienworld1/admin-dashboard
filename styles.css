@@ -204,10 +204,13 @@ button.user-action:hover {
     column-gap: 1.5rem;
 }
 
-
 .trending .user-profile {
     height: 2.5rem;
     grid-row: 1 / -1;
+}
+
+.trending-cards {
+    gap: 8px;
 }
 
 
