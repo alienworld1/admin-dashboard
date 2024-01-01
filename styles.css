@@ -149,3 +149,8 @@ button.user-action {
 button.user-action:hover {
     background: #3b82f6;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: minmax(400px, 3fr) 1fr;
+}
