@@ -9,6 +9,7 @@
     --sidebar-bg: #2563eb;
     --sidebar-text-color: #f1f5f9;
     --logo-size: 2rem;
+    --sidebar-link-gap: 24px;
 }
 
 body {
@@ -21,8 +22,13 @@ body {
     background: var(--sidebar-bg);
     color: var(--sidebar-text-color);
     padding: 16px;
+}
+
+.sidebar,
+.sidebar nav {
     display: flex;
     flex-direction: column;
+    gap: calc(2 * var(--sidebar-link-gap));
 }
 
 .sidebar .logo {
@@ -36,6 +42,14 @@ body {
 .sidebar .logo img {
     width: var(--logo-size);
     height: var(--logo-size);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sidebar-link-gap);
+    font-weight: bold;
 }
 
 img.filter-white {
